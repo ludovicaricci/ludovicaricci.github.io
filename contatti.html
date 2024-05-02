@@ -3,56 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti - Agenzia di Viaggi</title>
+    <title>Contatti</title>
     <style>
-        /* Stili CSS per il modulo di contatto */
-        /* Personalizza questi stili a tuo piacimento */
-        .contact-form {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        /* Stili per la sezione contatti */
+        .contatti {
+            font-family: Arial, sans-serif;
             background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
-        .contact-form label {
-            font-weight: bold;
+        .contatti h2 {
+            color: #333;
         }
-        .contact-form input[type="text"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
+        .contatti p {
+            color: #666;
+        }
+        .contatti ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contatti li {
             margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
         }
-        .contact-form button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 3px;
-            cursor: pointer;
+        .contatti a {
+            color: #007bff;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="contact-form">
-        <h2>Contattaci</h2>
-        <form action="processa_contatto.php" method="post">
-            <label for="Ludovica ">Nome:</label>
-            <input type="text" id="Ludovica" name="Ludovica" required>
-            <label for="Cognome ">cognome:</label>
-            <input type="text" id="Ricci" cognome="Ricci" required>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-            <p>Per contattarci, chiama il nostro numero di telefono:</p>
-            <a href="tel:+39 366 537 7452" class="phone-link">+39 366 537 7452</a>
-            <p>Questo è un paragrafo.<br>Qui c'è un nuovo a capo.</p>
-            <label for="messaggio">Messaggio:</label>
-            <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
-            <button type="submit">Invia</button>
-        </form>
+    <div class="contatti">
+        <h2>Contatti</h2>
+        <p>Per qualsiasi informazione o richiesta, puoi contattarci tramite i seguenti canali:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:info@agenziaviaggi.it">info@agenziaviaggi.it</a></li>
+            <li><strong>Telefono:</strong> +39 123 456789</li>
+            <li><strong>Indirizzo:</strong> Via del Viaggiatore, 123 - 65100 Pescara</li>
+        </ul>
     </div>
 </body>
 </html>
